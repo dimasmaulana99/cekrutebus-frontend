@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .aside-dropdown-container-height {
+    height: calc(100vh - 92px);
+  }
+  .mainview-container-height {
+    height: calc(100vh - 52px);
+  }
+  .grid-template-columns-auto-1 {
+    grid-template-columns: auto 1fr;
+  }
+  .button-forwardburger {
+    @apply w-6 h-6;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='color:%23ffffff' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M19,13H3V11H19L15,7L16.4,5.6L22.8,12L16.4,18.4L15,17L19,13M3,6H13V8H3V6M13,16V18H3V16H13Z' /%3E%3C/svg%3E");
+  }
+  .button-backburger {
+    @apply w-6 h-6;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='color:%23ffffff' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M5,13L9,17L7.6,18.42L1.18,12L7.6,5.58L9,7L5,11H21V13H5M21,6V8H11V6H21M21,16V18H11V16H21Z' /%3E%3C/svg%3E");
+  }
+  /* Network / Connection Status */
+  .net-online-square {
+    @apply pt-0.5 pb-0.5 px-1 border-2 border-blue-500 bg-gray-900 rounded-sm;
+  }
+  .net-online-text {
+    @apply text-xs text-orange-500 font-robotocondensed font-semibold;
+  }
+  .net-offline-square {
+    @apply pt-0.5 pb-0.5 px-1 border-2 border-gray-700 bg-gray-900 rounded-sm;
+  }
+  .net-offline-text {
+    @apply text-xs text-gray-600 font-robotocondensed font-semibold;
+  }
+  /* Notification Status */
+  .menu-notification-box {
+    @apply pt-0.5 pb-0.5 px-1 border-2 border-red-700 bg-red-700 rounded-sm;
+  }
+  .menu-notification-text {
+    @apply text-xs text-gray-50 font-roboto font-semibold;
+  }
+}
