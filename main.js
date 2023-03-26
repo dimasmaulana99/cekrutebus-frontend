@@ -78,7 +78,7 @@ window.addEventListener('DOMContentLoaded', async () => {
       }),
       new VectorLayer({
         source: new VectorSource({
-          url: './rute_all.geojson',
+          url: '../api/bus-routes',
           format: new GeoJSON(),
         }),
         style: function (feature, resolution) {
@@ -198,7 +198,7 @@ window.addEventListener('DOMContentLoaded', async () => {
       }),
       new VectorLayer({
         source: new VectorSource({
-          url: './halte_web_gis.geojson',
+          url: '../api/bus-stops',
           format: new GeoJSON(),
         }),
       }),
